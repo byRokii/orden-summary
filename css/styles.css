@@ -1,0 +1,121 @@
+html {
+	box-sizing: border-box;
+}
+
+* {
+	box-sizing: inherit;
+}
+
+body {
+	background: url(../images/pattern-background-desktop.svg);
+	background-repeat: no-repeat;
+	background-color: hsl(225, 100%, 94%);
+	background-position: 85% 5%;
+}
+
+p {
+	font-size: 16px;
+}
+
+main {
+	margin: 0;
+	padding: 0;
+	font-family: "Red Hat Display", sans-serif;
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+}
+
+.container .card {
+	border-radius: 14px;
+	box-shadow: 0 60px 80px rgba(0, 0, 0, 0.16);
+	text-align: center;
+	max-width: 395px;
+	background-color: white;
+}
+
+.container .card h2 {
+	font-weight: 900;
+}
+
+.container .card > p {
+	padding: 0 3em;
+	color: hsl(224, 23%, 55%);
+}
+
+.container .ilustration {
+	width: 100%;
+	border-radius: 14px 14px 0 0;
+}
+
+.container .plan {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: hsl(224deg 13.08% 96.74%);
+	max-width: 75%;
+	margin: 0 auto;
+	border-radius: 14px;
+}
+
+.container .plan a {
+	color: hsl(245, 75%, 52%);
+}
+
+.container .plan a:hover {
+	text-decoration: none;
+}
+
+.container .plan p:nth-of-type(1) {
+	font-weight: 700;
+	margin-bottom: -0.7em;
+}
+.container .plan p:nth-of-type(2) {
+	color: hsl(224, 23%, 55%);
+}
+
+.container .plan .caracteristics {
+	margin-left: -1.5em;
+}
+
+.container .buttons {
+	display: flex;
+	flex-direction: column;
+	max-width: 75%;
+	margin: 1em auto;
+	cursor: pointer;
+}
+
+.container .buttons .btn {
+	border: none;
+	outline: none;
+	border-radius: 14px;
+	margin: 0.4em;
+	padding: 1em;
+}
+
+.container .buttons .btn:nth-child(2) {
+	background-color: transparent;
+	color: hsl(224, 23%, 55%);
+	font-weight: 700;
+}
+
+.container .buttons .btn.payment {
+	box-shadow: 0px 8px 48px 6px rgba(0, 0, 0, 0.35);
+
+	background-color: hsl(245, 75%, 52%);
+	color: hsl(225, 100%, 98%);
+}
+
+.container .buttons .btn:nth-child(2):hover {
+	color: black;
+	font-weight: 700;
+}
+
+.container .buttons .btn.payment:hover {
+	background-color: blueviolet;
+}
